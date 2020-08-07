@@ -9,6 +9,7 @@ gradle properties
 gradle tasks
 
 gradle projects
+gradle -q projects
 
 gradle dependencies
 
@@ -17,6 +18,8 @@ gradle dependencies --configuration testCompile
 
 Habilitar no build.gradle: apply plugin: 'project-report'
 gradle htmlDependencyReport
+
+gradle -q clean
 
 PARA MIGRAR PARA O GRADLE 6 E ANALISAR COISAS DEPRECIADAS
 

@@ -15,3 +15,6 @@ dependencies {
 }
 
 apply plugin: 'project-report'
+
+//Mudar diretorio padrao do build
+//buildDir = "myBuild"
