@@ -4,6 +4,20 @@ gradle -v
 
 gradle build
 
+gradle properties
+
+gradle tasks
+
+gradle projects
+
+gradle dependencies
+
+gradle dependencies --configuration compile
+gradle dependencies --configuration testCompile
+
+Habilitar no build.gradle: apply plugin: 'project-report'
+gradle htmlDependencyReport
+
 PARA MIGRAR PARA O GRADLE 6 E ANALISAR COISAS DEPRECIADAS
 
 gradle --warning-mode all
