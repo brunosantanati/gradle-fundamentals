@@ -1,3 +1,13 @@
 gradle -v
 
 gradle build
+
+PARA MIGRAR PARA O GRADLE 6 E ANALISAR COISAS DEPRECIADAS
+
+gradle --warning-mode all
+Use '--warning-mode all' to show the individual deprecation warnings.
+
+gradle --warning-mode all --stacktrace
+Run with --stacktrace to get the full stack trace of this deprecation warning.
+
+OBS: Para fazer o curso tive que usar a versão 5.6.4 do Gradle, pois a versão mais nova atualmente 6.5.1 é incompatível
