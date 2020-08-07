@@ -1,8 +1,5 @@
 package info.garagesalesapp.domain;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-
 /**
  * Created by jamesharmon on 5/1/17.
  */
@@ -47,13 +44,11 @@ public class SaleEvent {
     public static void main(String[] args) {
         SaleEvent saleEvent = new SaleEvent();
         saleEvent.setId("100");
-        saleEvent.setStreetAddress("123 Main St.");
+        saleEvent.setStreetAddress("125 Main St.");
         saleEvent.setCity("Naperville");
 
         System.out.println(saleEvent.toString());
 
-        Gson gson = new GsonBuilder().create();
-        String json = gson.toJson(saleEvent);
-        System.out.println(json);
+        JsonDisplay.showJson(saleEvent);
     }
 }
