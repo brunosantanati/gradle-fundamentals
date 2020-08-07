@@ -1,3 +1,5 @@
+COMANDOS GRADLE
+
 gradle -v
 
 gradle build
@@ -11,3 +13,40 @@ gradle --warning-mode all --stacktrace
 Run with --stacktrace to get the full stack trace of this deprecation warning.
 
 OBS: Para fazer o curso tive que usar a versão 5.6.4 do Gradle, pois a versão mais nova atualmente 6.5.1 é incompatível
+
+--------------------------------------------------------------------------
+
+GROOVY
+
+1-Para testar um pouco de Groovy, no Intellij menu Tools > Groovy Console...
+
+2-Digitar:
+System.out.println("Hello World!")
+
+3-Ctrl + Enter para rodar o código
+
+EXEMPLOS
+
+System.out.println("Hello World!");
+
+------------
+
+println("Hello World without System.out")
+
+------------
+
+println "Hello World without parentheses"
+
+------------
+
+class MyClass {
+    void doSomething(Closure closure){
+        closure.call()
+    }
+}
+
+myObject = new MyClass()
+
+myObject.doSomething {
+    println new Date()
+}
