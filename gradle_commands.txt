@@ -25,6 +25,8 @@ gradle htmlDependencyReport
 
 gradle -q clean
 
+gradle build --profile
+
 ------------
 
 GRADLE WRAPPER
