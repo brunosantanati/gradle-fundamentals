@@ -68,6 +68,13 @@ Executar:
 
 gradle showDate
 
+------------
+
+GRADLE FORUMS
+
+Para fazer perguntas sobre o Gradle(onde poderei falar diretamente com os criadores do Gradle):
+https://discuss.gradle.org
+
 --------------------------------------------------------------------------
 
 GROOVY
