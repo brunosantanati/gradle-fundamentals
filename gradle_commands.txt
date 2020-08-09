@@ -1,5 +1,8 @@
 COMANDOS GRADLE
 
+Abrir Gradle view tool no Intellij:
+View -> Tool Windows -> Gradle
+
 gradle -v
 
 gradle build
@@ -7,6 +10,7 @@ gradle build
 gradle properties
 
 gradle tasks
+gradle tasks --all
 
 gradle projects
 gradle -q projects
@@ -21,6 +25,8 @@ gradle htmlDependencyReport
 
 gradle -q clean
 
+------------
+
 GRADLE WRAPPER
 
 gradlew -q projects
@@ -28,6 +34,8 @@ gradlew -q projects
 gradle wrapper --gradle-version 3.5
 Gera arquivos do Gradle wrapper(só usar quando não existem esses arquivos que são: 
 gradlew, gradlew.bat, gradle\wrapper\gradle-wrapper.jar e gradle\wrapper\gradle-wrapper.properties)
+
+------------
 
 PARA MIGRAR PARA O GRADLE 6 E ANALISAR COISAS DEPRECIADAS
 
@@ -38,6 +46,27 @@ gradle --warning-mode all --stacktrace
 Run with --stacktrace to get the full stack trace of this deprecation warning.
 
 OBS: Para fazer o curso tive que usar a versão 5.6.4 do Gradle, pois a versão mais nova atualmente 6.5.1 é incompatível
+
+------------
+
+CRIAR PRÓPRIA TASK
+
+Colocar no build.gradle:
+
+task showDate{
+    dependsOn build
+    group = 'my tasks'
+    description = "Show current date"
+    doLast{
+        println ""
+        println 'Current Date: ' + new Date()
+        println ""
+    }
+}
+
+Executar:
+
+gradle showDate
 
 --------------------------------------------------------------------------
 

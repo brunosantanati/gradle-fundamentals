@@ -18,3 +18,14 @@ apply plugin: 'project-report'
 
 //Mudar diretorio padrao do build
 //buildDir = "myBuild"
+
+task showDate{
+    dependsOn build
+    group = 'my tasks'
+    description = "Show current date"
+    doLast{
+        println ""
+        println 'Current Date: ' + new Date()
+        println ""
+    }
+}
