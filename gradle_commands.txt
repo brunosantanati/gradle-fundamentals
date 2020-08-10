@@ -77,6 +77,12 @@ GRADLE FORUMS
 Para fazer perguntas sobre o Gradle(onde poderei falar diretamente com os criadores do Gradle):
 https://discuss.gradle.org
 
+------------
+
+GRADLE BUILD-SCAN
+
+https://plugins.gradle.org/plugin/com.gradle.build-scan
+
 --------------------------------------------------------------------------
 
 GROOVY
