@@ -1,3 +1,9 @@
+buildscript {
+    dependencies {
+        classpath files('show-date/build/libs/show-date-1.0-SNAPSHOT.jar')
+    }
+}
+
 plugins {
     id 'java'
 }
@@ -30,19 +36,21 @@ apply plugin: 'project-report'
 //    }
 //}
 
-class ShowDate extends DefaultTask {
+//class ShowDate extends DefaultTask {
+//
+//    String dateMessage = "Date is: "
+//
+//    @TaskAction
+//    void showDate() {
+//        println dateMessage + new Date()
+//    }
+//
+//}
+//
+//task showDate(type: ShowDate)
+//
+//task customShowDate(type: ShowDate){
+//    dateMessage = "Custom time is: "
+//}
 
-    String dateMessage = "Date is: "
-
-    @TaskAction
-    void showDate() {
-        println dateMessage + new Date()
-    }
-
-}
-
-task showDate(type: ShowDate)
-
-task customShowDate(type: ShowDate){
-    dateMessage = "Custom time is: "
-}
+apply plugin: 'show-date-plugin'
